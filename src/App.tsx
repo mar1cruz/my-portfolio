@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./layout/header/Header";
+import Developer from "./layout/sections/developer/Developer";
+import {About} from "./layout/sections/about/About";
 
 
 export default function App() {
     return (
         <>
             <Header/>
-            <Main/>
+            <Developer/>
+            <About/>
         </>
     )
 }
