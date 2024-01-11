@@ -10,11 +10,20 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   body {
-    max-width: 1060px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
     background: #041F31;
     color: #BDEBEA;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+
   }
 `
