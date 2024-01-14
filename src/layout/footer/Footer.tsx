@@ -33,11 +33,20 @@ const StyledFooter = styled.footer`
 const SocialBody = styled(FlexWrapper)`
   gap: 73px;
   margin-bottom: 50px;
+  
+  @media (max-width: 575.98px) {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
 `
 
 const FooterLinks = styled(FlexWrapper)`
   gap: 48px;
   margin-bottom: 50px;
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 30px;
+  }
 `
 
 const Job = styled.small`

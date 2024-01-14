@@ -28,4 +28,8 @@ const HeaderWrapper = styled.header`
 
 const BtnWrapper = styled(FlexWrapper)`
   gap: 87px;
+
+  @media (max-width: 575.98px) {
+    gap: 35px;
+  }
 `

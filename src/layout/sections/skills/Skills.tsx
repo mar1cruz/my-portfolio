@@ -53,7 +53,7 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
                 <Title>Skills</Title>
-                <SkillsWrapper wrap='wrap' justify='space-between'>
+                <SkillsWrapper>
                     {knowledge.map((item, index) => {
                         return (<Skill key={index} info={item}/>)
                     })}
@@ -67,8 +67,20 @@ const StyledSkills = styled.section`
   margin-bottom: 140px;
 `
 
-const SkillsWrapper = styled(FlexWrapper)`
-    gap: 129px;
+const SkillsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, auto));
+  justify-items: center;
+  align-items: center;
+  gap: 120px;
+
+  @media (max-width: 991.98px) {
+    gap: 75px
+  }
+  @media (max-width: 575.98px) {
+    gap: 75px
+  }
 `
+
 const Title = styled(SectionTitle)`
   margin-bottom: 28px;`

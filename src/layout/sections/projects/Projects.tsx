@@ -39,7 +39,7 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
                 <Title>Projects</Title>
-                <CardWrapper wrap='wrap'>
+                <CardWrapper wrap='wrap' justify='center'>
                     {cards.map((item, index) => {
                         return (
                             <Project key={index} card={item}/>
@@ -56,6 +56,13 @@ const StyledProjects = styled.section`
 `
 const CardWrapper = styled(FlexWrapper)`
   gap: 20px;
+  
+  @media(max-width: 1199.98px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
 `
 
 const Title = styled(SectionTitle)`

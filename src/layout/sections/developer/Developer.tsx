@@ -22,7 +22,7 @@ export default function Developer() {
                         <Button padding={'12px 20px'} text='Contact Me' gradient={true}></Button>
                     </DeveloperBody>
 
-                    <Icon width='418' height='304' viewBox="0 0 501 467" iconId='mainLogo'/>
+                    <Icon  width='418' height='304' viewBox="0 0 501 467" iconId='mainLogo'/>
                 </MainBody>
                 <FlexWrapper justify='center'><Icon width='32' height='32' viewBox='0 0 32 32'
                                                     iconId='scroll'/></FlexWrapper>
@@ -37,6 +37,11 @@ const StyledDeveloper = styled.section`
 
 const MainBody = styled(FlexWrapper)`
   margin-bottom: 105px;
+  
+  @media(max-width: 991.98px){
+    flex-direction: column;
+    gap: 50px;
+  }
 `
 
 const DeveloperBody = styled(FlexWrapper)`
@@ -57,6 +62,10 @@ const Name = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 11px;
+  
+  @media (max-width: 575.98px){
+    font-size: 55px;
+  }
 `
 
 const Text = styled.p`

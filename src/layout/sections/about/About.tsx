@@ -48,4 +48,8 @@ margin-bottom: 20px;
 
 const AboutText = styled(Text)`
   max-width: 843px;
+  
+ @media (max-width: 767.98px){
+   font-size: 16px;
+ } 
 `

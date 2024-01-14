@@ -21,7 +21,7 @@ export const Project = (props: ProjectTypeProps) => {
                 <Image src={props.card.imageSrc} alt=""/>
                 <ProjectBody direction='column'>
                     <ProjectTitle>{props.card.title}</ProjectTitle>
-                    <Technology>
+                    <Technology wrap='wrap'>
                         {props.card.buttons.map((item, index) => {
                             return (<Button gradient={true} key={index} text={`${item}`}/>)
                         })}
@@ -34,9 +34,17 @@ export const Project = (props: ProjectTypeProps) => {
 };
 
 const StyledProject = styled.div`
-  max-width: 500px;
+  max-width: 49%;
+  width: 100%;
   border-radius: 6px;
   background: #222525;
+
+  @media(max-width: 1199.98px){
+    max-width: 520px;
+  } 
+  @media(max-width: 575.98px){
+    max-width: 420px;
+  }
 `
 
 const ProjectBody = styled(FlexWrapper)`

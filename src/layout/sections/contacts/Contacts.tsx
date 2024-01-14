@@ -30,7 +30,7 @@ export const Contacts = () => {
     return (
         <StyledContacts id='contacts'>
             <Container>
-                <SectionTitle>Contacts</SectionTitle>
+                <Title>Contacts</Title>
                 <FlexWrapper justify='center' align='center'>
                     <Form>
                         {inputInfo.map((item, index) => {
@@ -61,5 +61,11 @@ const Form = styled.form`
   width: 100%;
 `
 
-const ButtonSubmit = styled(Button)``
+const Title = styled(SectionTitle)`
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 15px;
+  }
+  
+`
 
