@@ -7,25 +7,44 @@ import {Container} from "../../../components/Container";
 
 const knowledge = [
     {
+        iconId: 'html',
+        viewBox:"0 0 94 106"
+    },
+    {
+        iconId: 'css',
+        viewBox:"0 0 94 106"
+    },
+    {
+        iconId: 'saas',
+        viewBox: '0 0 117 87'
+    },
+    {
         iconId: 'javascript',
-        description: 'JAVACRIPT',
-    },
-    {
-        iconId: 'typeScript',
-        description: 'typescript',
-    },
-    {
-        iconId: 'react',
-        description: 'react js',
-    },
-    {
-        iconId: 'styled',
-        description: 'Styled Components',
     },
     {
         iconId: 'git',
-        description: 'git',
-    }
+    },
+    {
+        iconId: 'github',
+        viewBox: '0 0 89 85'
+    },
+    {
+        iconId: 'react',
+        viewBox: '0 0 113 101'
+    },
+    {
+        iconId: 'vsCode',
+        viewBox: '0 0 100 100'
+
+    },
+    {
+        iconId: 'styled',
+        viewBox: '0 0 120 120'
+    },
+    {
+        iconId: 'typeScript',
+        viewBox: '0 0 120 120'
+    },
 ]
 export const Skills = () => {
 
@@ -49,6 +68,7 @@ const StyledSkills = styled.section`
 `
 
 const SkillsWrapper = styled(FlexWrapper)`
+    gap: 129px;
 `
 const Title = styled(SectionTitle)`
-margin-bottom: 28px;`
+  margin-bottom: 28px;`

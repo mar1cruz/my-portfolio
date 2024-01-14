@@ -10,7 +10,7 @@ const cards = [
     {
         imageSrc: ProjectImg,
         title: 'TITLE PROJECT',
-        buttons: ['Javascript', 'PostgreSQL', 'React', 'redux'],
+        buttons: ['Javascript', 'PostgreSQL', 'React', 'Redux'],
         text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
     },
     {
@@ -22,7 +22,7 @@ const cards = [
     {
         imageSrc: ProjectImg,
         title: 'TITLE PROJECT',
-        buttons: ['Javascript', 'PostgreSQL', 'React', 'redux'],
+        buttons: ['Javascript', 'PostgreSQL', 'React', 'Redux'],
         text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
     },
     {

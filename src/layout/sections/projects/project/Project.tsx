@@ -23,7 +23,7 @@ export const Project = (props: ProjectTypeProps) => {
                     <ProjectTitle>{props.card.title}</ProjectTitle>
                     <Technology>
                         {props.card.buttons.map((item, index) => {
-                            return (<Button gradient key={index} text={`${item}`}/>)
+                            return (<Button gradient={true} key={index} text={`${item}`}/>)
                         })}
                     </Technology>
                     <Text>{props.card.text}</Text>

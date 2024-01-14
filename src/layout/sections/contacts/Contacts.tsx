@@ -28,7 +28,7 @@ const inputInfo = [
 ]
 export const Contacts = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id='contacts'>
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <FlexWrapper justify='center' align='center'>
@@ -39,7 +39,7 @@ export const Contacts = () => {
                             )
                         })}
 
-                        <Button gradient={true} padding={'12px 20px'} as={'button'} text='Submit' type={'submit'}></Button>
+                        <Button fullWidth gradient={true} padding={'12px 20px'} as={'button'} text='Submit' type={'submit'}></Button>
                     </Form>
                 </FlexWrapper>
             </Container>
@@ -48,7 +48,7 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-
+  margin-bottom: 190px;
 `
 
 const Form = styled.form`

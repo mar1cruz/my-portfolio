@@ -4,21 +4,22 @@ import FlexWrapper from "../../components/FlexWrapper";
 import {SocialCard} from "../../components/socialCard/socialCard";
 import {Container} from "../../components/Container";
 
+
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
                 <FlexWrapper justify='center' align='center' direction='column'>
                     <SocialBody>
-                        <SocialCard iconId={'gmail'} text=''/>
-                        <SocialCard iconId={'linkedin'} text=''/>
-                        <SocialCard iconId={'github'} text=''/>
+                        <SocialCard link='https://github.com/mar1cruz' iconId={'socialGithub'} text='GITHUB'/>
+                        <SocialCard link='https://www.linkedin.com/in/дмитрий-довидович-166843286/' iconId={'socialLinkedin'} text='LINKEDIN'/>
+                        <SocialCard link='https://t.me/mar1cruze' iconId={'socialTelegram'} text='TELEGRAM'/>
                     </SocialBody>
                     <FooterLinks>
-                        <Link>Projects</Link>
-                        <Link>Contact</Link>
+                        <Link href='#contacts'>Projects</Link>
+                        <Link href=''>Contact</Link>
                     </FooterLinks>
-                    <Job>WEB DEVELOPER 2021</Job>
+                    <Job>WEB DEVELOPER 2024</Job>
                 </FlexWrapper>
             </Container>
         </StyledFooter>
@@ -30,15 +31,17 @@ const StyledFooter = styled.footer`
 `
 
 const SocialBody = styled(FlexWrapper)`
-
+  gap: 73px;
+  margin-bottom: 50px;
 `
 
 const FooterLinks = styled(FlexWrapper)`
-
+  gap: 48px;
+  margin-bottom: 50px;
 `
 
 const Job = styled.small`
-
+  margin-bottom: 100px;
 `
 
 const Link = styled.a`

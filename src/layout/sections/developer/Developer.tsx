@@ -22,7 +22,7 @@ export default function Developer() {
                         <Button padding={'12px 20px'} text='Contact Me' gradient={true}></Button>
                     </DeveloperBody>
 
-                    <Icon width='418' height='304' viewBox='"0 0 424 305"' iconId='mainLogo'/>
+                    <Icon width='418' height='304' viewBox="0 0 501 467" iconId='mainLogo'/>
                 </MainBody>
                 <FlexWrapper justify='center'><Icon width='32' height='32' viewBox='0 0 32 32'
                                                     iconId='scroll'/></FlexWrapper>
