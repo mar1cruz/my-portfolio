@@ -7,4 +7,8 @@ export const SectionTitle = styled.h2`
   line-height: 26px;
   letter-spacing: 0.96px;
   
+  @media(max-width: 991.98px){
+    text-align: center;
+  }
+  
 `

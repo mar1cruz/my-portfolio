@@ -12,7 +12,7 @@ export default function Header() {
                     <Button  text='Home'/>
                     <BtnWrapper align='center'>
                         <Button  text='Projects'/>
-                        <Button padding='12px 20px' gradient={true} text='Contact'/>
+                        <Button padding='12px 20px' gradient='yes' text='Contact'/>
                     </BtnWrapper>
                 </FlexWrapper>
             </Container>
@@ -21,9 +21,11 @@ export default function Header() {
 }
 
 const HeaderWrapper = styled.header`
-  padding: 27px 0 28px;
-  margin-bottom: 187px;
+  padding: 27px 0px 187px 0px;
 
+  @media(max-width: 991.98px){
+    padding-bottom: 35px;
+  }
 `
 
 const BtnWrapper = styled(FlexWrapper)`

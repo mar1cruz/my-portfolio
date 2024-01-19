@@ -39,7 +39,7 @@ export const Contacts = () => {
                             )
                         })}
 
-                        <Button fullWidth gradient={true} padding={'12px 20px'} as={'button'} text='Submit' type={'submit'}></Button>
+                        <Button fullWidth gradient='yes' padding={'12px 20px'} as={'button'} text='Submit' type={'submit'}></Button>
                     </Form>
                 </FlexWrapper>
             </Container>
@@ -48,7 +48,11 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-  margin-bottom: 190px;
+  padding-bottom: 190px;
+  
+  @media(max-width: 991.98px){
+    padding-bottom: 100px;
+  }
 `
 
 const Form = styled.form`

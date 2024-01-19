@@ -23,7 +23,7 @@ export const Project = (props: ProjectTypeProps) => {
                     <ProjectTitle>{props.card.title}</ProjectTitle>
                     <Technology wrap='wrap'>
                         {props.card.buttons.map((item, index) => {
-                            return (<Button gradient={true} key={index} text={`${item}`}/>)
+                            return (<Button gradient='yes' key={index} text={`${item}`}/>)
                         })}
                     </Technology>
                     <Text>{props.card.text}</Text>
@@ -40,7 +40,7 @@ const StyledProject = styled.div`
   background: #222525;
 
   @media(max-width: 1199.98px){
-    max-width: 520px;
+    max-width: 450px;
   } 
   @media(max-width: 575.98px){
     max-width: 420px;

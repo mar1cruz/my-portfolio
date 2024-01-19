@@ -26,7 +26,11 @@ export const About = () => {
 };
 
 const StyledAbout = styled.section`
-    margin-bottom: 130px;
+    padding-bottom: 130px;
+  
+  @media(max-width: 991.98px){
+    padding-bottom: 100px;
+  }
 `
 
 const Line = styled.div`

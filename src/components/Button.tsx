@@ -4,7 +4,7 @@ import styled, {css} from "styled-components";
 type ButtonPropsType = {
     text: string
     as?: string
-    gradient?: boolean
+    gradient?: 'yes' | 'no'
     padding?: string
     type?: string
     fullWidth?: boolean
@@ -17,20 +17,19 @@ export const Button = (props: ButtonPropsType) => {
         <StyledButton padding={props.padding || '8px 16px'}
                       gradient={props.gradient}
                       as={props.as || 'a'}
-                      type={props.type || 'text'}
                       width={props.fullWidth ? '100%' : ''}>
             {props.text}</StyledButton>
     );
 };
 
 type StyledButtonType = {
-    gradient?: boolean
-    padding: string
+    gradient?: 'yes' | 'no'
+    padding?: string
     width?: string
 
 }
 
-const StyledButton = styled.a<StyledButtonType>`
+const StyledButton = styled.button<StyledButtonType>`
   width: initial;
   width: ${props => props.width || 'inherit'};
   cursor: pointer;
@@ -41,15 +40,15 @@ const StyledButton = styled.a<StyledButtonType>`
   outline: none;
 
 
-  ${props => props.gradient ? css<StyledButtonType>`
+  ${props => props.gradient === 'yes' && css<StyledButtonType>`
     padding: ${props.padding};
     border-radius: 6px;
-    background: var(--gradient, linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%));
+    background-image: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
 
     color: #252728;
     text-align: center;
-  ` : ''
 
   }
-}
+  `
+  }
 `

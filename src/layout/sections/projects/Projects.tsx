@@ -52,12 +52,21 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  margin-bottom: 140px;
+  padding-bottom: 140px;
+  
+  @media(max-width: 991.98px){
+    padding-bottom: 100px;
+  }
 `
 const CardWrapper = styled(FlexWrapper)`
   gap: 20px;
   
   @media(max-width: 1199.98px){
+    align-items:stretch;
+    gap: 40px;
+  }
+  
+  @media(max-width: 991.98px){
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -54,5 +54,7 @@ const Job = styled.small`
 `
 
 const Link = styled.a`
-
+  &:visited,&:active{
+    color: inherit;
+  }
 `

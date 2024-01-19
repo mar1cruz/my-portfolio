@@ -64,7 +64,11 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  margin-bottom: 140px;
+  padding-bottom: 140px;
+  
+  @media(max-width: 991.98px){
+    padding-bottom: 100px;
+  }
 `
 
 const SkillsWrapper = styled.div`
@@ -77,6 +81,7 @@ const SkillsWrapper = styled.div`
   @media (max-width: 991.98px) {
     gap: 75px
   }
+  
   @media (max-width: 575.98px) {
     gap: 75px
   }
